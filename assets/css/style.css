@@ -1509,3 +1509,37 @@ p {
 .portfolio-slider-warp .center img {
 	border: 2px solid #fff;
 }
+
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients .clients-slider .swiper-slide {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+  /* Using flex to center the logo inside the slide */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients .clients-slider .swiper-slide:hover {
+  opacity: 1;
+}
+
+/* Applying the fix for SVG images and setting size */
+.clients .clients-slider .swiper-slide img {
+  width: 200%; /* Bootstrap SVG fix */
+  max-width: 150px; /* Set a max-width to control the largest size */
+  height: 120px; /* Set the desired height */
+  object-fit: contain; /* Ensure the image scales correctly within the box */
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.clients .clients-slider .swiper-slide:hover img {
+  filter: none;
+}
+
+
+

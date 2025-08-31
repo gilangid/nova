@@ -539,3 +539,35 @@ const countdownInit = () => {
 };
 document.addEventListener('DOMContentLoaded', countdownInit);
 
+
+  /**
+   * Clients Slider
+   */
+  new Swiper('.clients-slider', {
+    speed: 4000,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    breakpoints: {
+      320: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      480: {
+        slidesPerView: 4,
+        spaceBetween: 60
+      },
+      640: {
+        slidesPerView: 5,
+        spaceBetween: 80
+      },
+      992: {
+        slidesPerView: 6,
+        spaceBetween: 120
+      }
+    }
+  });
+
