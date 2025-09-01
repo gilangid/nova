@@ -47,6 +47,18 @@ License: https://freebootstrap.net/license
     <!-- ======= Theme Style =======-->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- End Theme Style-->
+
+    <!-- GLightbox Custom Style -->
+    <style>
+      .gslide-image img {
+        max-width: 100%;
+        max-height: 100vh;
+        object-fit: contain;
+      }
+      .g-modal .g-slide {
+        padding: 0;
+      }
+    </style>
     
     <!-- ======= Apply theme =======-->
     <script>
@@ -176,108 +188,134 @@ License: https://freebootstrap.net/license
       <!-- End Header-->
       
     <!-- Article Section-->
-      <br><br>
       <main>
-      <section class="article-section section">
-        <div class="container-fluid custom-article-container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
-                <div class="article-header mb-5">
-                  <h1 class="article-title mb-2">Masa Depan Teknologi Keuangan</h1>
-                  <h5 class="card-title mb-4">Bagaimana Inovasi Fintech Mengubah Cara Kita Mengelola Uang</h5>
-                  
-                  <div class="article-meta d-flex align-items-center gap-4 mb-4">
-                    <div class="author d-flex align-items-center gap-2">
-                      <div class="author-img rounded-circle">
-                        <img src="assets/images/person-sq-1-min.jpg" alt="Author" class="rounded-circle" width="40">
-                      </div>
-                      <span>Budi Santoso</span>
+      <section class="project-section section">
+
+        <!-- ======= Project Overview Section =======-->
+        <section class="section bg-light py-5">
+          <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="h1">Project Details</h2>
+                    <p class="">A deep dive into one of our successful projects.</p>
+                </div>
+            </div>
+            <!-- Profile Row -->
+            <div class="d-flex align-items-center mb-5 p-0">
+              <div class="flex-shrink-0">
+                <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google Logo" style="height: 48px; width: auto; object-fit: contain;" class="p-2">
+              </div>
+              <div class="ms-4 p-0">
+                <h3 class="h5 mb-1">Google Inc Brand<span class="badge bg-primary rounded-pill ms-3">Published</span></h3>
+                <p class="mb-0 small">UI Designer • eCommerce, Brand, System</p>
+              </div>
+            </div>
+
+            <div class="row g-5">
+              <!-- Left Column -->
+              <div class="col-lg-7">
+                <div class="card shadow-sm">
+                  <div class="bg-dark rounded-top p-3 p-sm-4">
+                     <a href="assets\images\img-11-min.jpg" class="glightbox" data-gallery="project-overview">
+                        <img id="mainImageOverview" src="assets\images\img-11-min.jpg" alt="Project main view" class="img-fluid rounded-3">
+                     </a>
+                  </div>
+                  <div class="card-body p-4">
+                    <!-- Thumbnails -->
+                    <h6 class="small mb-3">Project Gallery</h6>
+                    <div class="d-flex flex-wrap gap-2" id="overview-thumbnails">
+                        <img src="assets\images\img-3-min.jpg" class="img-thumbnail active" style="width: 80px; height: 60px; object-fit: cover; cursor: pointer;">
+                        <img src="assets\images\img-15-min.jpg" class="img-thumbnail" style="width: 80px; height: 60px; object-fit: cover; cursor: pointer;">
+                        <img src="assets\images\img-7-min.jpg" class="img-thumbnail" style="width: 80px; height: 60px; object-fit: cover; cursor: pointer;">
+                        <img src="assets\images\img-8-min.jpg" class="img-thumbnail" style="width: 80px; height: 60px; object-fit: cover; cursor: pointer;">
+                        <img src="assets\images\img-11-min.jpg" class="img-thumbnail" style="width: 80px; height: 60px; object-fit: cover; cursor: pointer;">
                     </div>
-                    <div class="date">
-                      <i class="bi bi-calendar me-1"></i>17 Agustus 2025
-                    </div>
-                    <div class="category">
-                      <span class="badge bg-primary">Teknologi</span>
+                    <hr class="mb-4">
+                    <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
+                        <a href="https://www.google.com" target="_blank" rel="noopener" class="btn btn-primary">
+                            <i class="bi bi-box-arrow-up-right me-1"></i> Buka Website
+                        </a>
+                        <a href="#" class="btn btn-outline-primary"><i class="bi bi-download me-2"></i>Unduh Studi Kasus</a>
+                        <a href="#" class="btn btn-outline-primary"><i class="bi bi-send me-2"></i>Hubungi</a>
                     </div>
                   </div>
                 </div>
-                
-                <div class="article-image mb-5 mx-auto">
-                   <div class="hero-img"><img class="img-main img-fluid rounded-4" src="assets/images/about_2-min.jpg" alt="Hero Image" data-aos="fade-in" data-aos-delay="500"></div>
-                  <div class="image-caption text-center mt-2 text-muted">Ilustrasi teknologi keuangan modern</div>
-                </div>
-                
-                <div class="container mt-5">
-                  <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                      <div class="article-content">
-                        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
-                        <br>
-                        <div class="img-hero"><img class="img-main img-fluid rounded-4 mx-auto d-block col-8" src="assets/images/about_2-min.jpg" alt="Hero Image" data-aos="fade-in" data-aos-delay="500"></div>
-                        <h2 class="mt-5 mb-3">Revolusi Pembayaran Digital</h2>
-                        <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-                        <p>Maecenas ipsum velit, consectetuer eu, lobortis ut, dictum at, dui. In rutrum. Sed ac dolor sit amet purus malesuada congue. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.</p>
-                  
-                        <blockquote class="blockquote my-5 p-4 bg-light rounded-3">
-                          <p class="mb-0">"Fintech bukan hanya tentang teknologi, tapi tentang memecahkan masalah keuangan nyata dengan cara yang lebih efisien dan inklusif."</p>
-                          <footer class="blockquote-footer mt-2">Jane Doe, Fintech Expert</footer>
-                        </blockquote>
-                  
-                        <h3 class="mt-5 mb-3">Masa Depan Investasi</h3>
-                        <p>Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor. Mauris pretium quam et urna.</p>
-                  
-                        <div class="row my-4">
-                          <div class="col-md-6 mb-3">
-                            <div class="card h-100">
-                              <div class="card-body">
-                                <h5 class="card-title">Keamanan Data</h5>
-                                <p class="card-text">Teknologi blockchain memberikan lapisan keamanan tambahan untuk transaksi keuangan digital.</p>
-                              </div>
+              </div>
+
+              <!-- Right Column -->
+              <div class="col-lg-5">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <h2 class="h2">Responsive eCommerce Mebel Mewah | AI & Branding</h2>
+                                <p class="small">2024 • Web • Retail & Interior</p>
                             </div>
-                          </div>
-                          <div class="col-md-6 mb-3">
-                            <div class="card h-100">
-                              <div class="card-body">
-                                <h5 class="card-title">Inklusi Keuangan</h5>
-                                <p class="card-text">Fintech membuka akses keuangan bagi masyarakat yang sebelumnya tidak terjangkau layanan perbankan.</p>
-                              </div>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">Overview</h5>
+                        <p>Mengembangkan platform eCommerce responsif untuk brand mebel premium dengan fitur kustomisasi berbasis AI. Fokus pada storytelling produk, konversi, dan pengalaman omnichannel yang konsisten di web & mobile.</p>
+
+                        <h5 class="fw-bold mt-4">Tujuan Utama</h5>
+                        <ul class="list-unstyled">
+                            <li class="d-flex gap-3 mb-2"><i class="bi bi-graph-up-arrow text-primary fs-5"></i><span>Meningkatkan engagement dengan konfigurator AI untuk material, ukuran, dan warna.</span></li>
+                            <li class="d-flex gap-3 mb-2"><i class="bi bi-graph-up-arrow text-primary fs-5"></i><span>Mendongkrak performa halaman produk dan checkout untuk memaksimalkan conversion rate.</span></li>
+                            <li class="d-flex gap-3 mb-2"><i class="bi bi-globe text-primary fs-5"></i><span>Menyatukan katalog online–offline dengan informasi stok real‑time.</span></li>
+                        </ul>
+
+                        <h5 class="fw-bold mt-4">Ruang Lingkup</h5>
+                        <ul class="list-unstyled">
+                            <li class="d-flex gap-3 mb-3"><i class="bi bi-file-text text-primary fs-5"></i><div>Discovery & Riset<span class="d-block small">Wawancara pengguna, analisis pasar, dan penentuan KPI produk.</span></div></li>
+                            <li class="d-flex gap-3 mb-3"><i class="bi bi-palette text-primary fs-5"></i><div>Branding<span class="d-block small">Identitas visual, tipografi, palet warna, dan tone of voice premium.</span></div></li>
+                            <li class="d-flex gap-3 mb-3"><i class="bi bi-layers text-primary fs-5"></i><div>Design System<span class="d-block small">Komponen skalabel, dokumentasi, dan token desain untuk konsistensi.</span></div></li>
+                        </ul>
+
+                        <div class="bg-light p-3 rounded mt-4">
+                            <h6 class="fw-bold">Hasil & Dampak</h6>
+                            <div class="row g-2">
+                                <div class="col-sm-6"><small><i class="bi bi-check-circle-fill text-success me-1"></i>+32% Conversion Rate</small></div>
+                                <div class="col-sm-6"><small><i class="bi bi-check-circle-fill text-success me-1"></i>+41% Avg. Session Time</small></div>
+                                <div class="col-sm-6"><small><i class="bi bi-check-circle-fill text-success me-1"></i>95/100 Lighthouse UX</small></div>
+                                <div class="col-sm-6"><small><i class="bi bi-check-circle-fill text-success me-1"></i>NPS +22 poin</small></div>
                             </div>
-                          </div>
                         </div>
-                  
-                        <p>Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Proin mattis lacinia justo. Vestibulum facilisis auctor urna. Aliquam in lorem sit amet leo accumsan lacinia.</p>
-                  
-                        <div class="article-tags mt-5 pt-4 border-top">
-                          <span class="fw-semibold me-2">Tags:</span>
-                          <a href="#" class="badge bg-success text-decoration-none me-1">Fintech</a>
-                          <a href="#" class="badge bg-danger text-decoration-none me-1">Digital Banking</a>
-                          <a href="#" class="badge bg-warning text-decoration-none">Blockchain</a>
-                        </div>
-                      </div>
+
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </main>
- <!-- End Article Section-->
+        <!-- End Project Overview Section -->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainImage = document.getElementById('mainImageOverview');
+            if (!mainImage) return;
+            const lightboxLink = mainImage.parentElement;
+            const thumbnails = document.querySelectorAll('#overview-thumbnails .img-thumbnail');
+            
+            const lightbox = GLightbox({
+                selector: '.glightbox',
+                width: '60vw',
+                height: '60vh'
+            });
 
- <!-- ======= Blog Pagination =======-->
-        <section class="section pt-4 pb-5">
-          <div class="container" data-aos="fade-up">
-            <div class="blog-pagination d-flex justify-content-center align-items-center gap-3">
-              <a class="btn btn-outline-primary btn-lg rounded-pill px-4 pagination-btn prev" href="#" aria-label="Previous">
-                <i class="bi bi-chevron-left me-1"></i> Previous
-              </a>
-              <a class="btn btn-primary btn-lg rounded-pill px-4 pagination-btn next" href="#" aria-label="Next">
-                Next <i class="bi bi-chevron-right ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </section>
-        <!-- End Blog Pagination-->
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    let highResSrc = this.src.includes('w=400') ? this.src.replace('w=400', 'w=1600') : this.src;
+                    mainImage.src = highResSrc;
+                    
+                    if (lightboxLink && lightboxLink.tagName === 'A') {
+                        lightboxLink.href = highResSrc;
+                        lightbox.reload();
+                    }
+
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+        </script>
         
 
         <!-- ======= Footer =======-->
@@ -334,9 +372,9 @@ License: https://freebootstrap.net/license
               <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
                 <!--
                 Note:
-                =>>> Please keep all the footer links intact. <<<=
-                =>>> You can only remove the links if you buy the pro version. <<<=
-                =>>> Buy the pro version, which includes a functional PHP/AJAX contact form and many additional features.: https://freebootstrap.net/template/vertex-pro-bootstrap-website-template-for-portfolio/ <<<=
+                =>>> Please keep all the footer links intact. <<<= 
+                =>>> You can only remove the links if you buy the pro version. <<<= 
+                =>>> Buy the pro version, which includes a functional PHP/AJAX contact form and many additional features.: https://freebootstrap.net/template/vertex-pro-bootstrap-website-template-for-portfolio/ <<<= 
                 --> 
                 &copy;
                 <script>document.write(new Date().getFullYear());</script> Nova. 
